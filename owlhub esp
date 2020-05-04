@@ -55,7 +55,7 @@ function OwlESP.new(data)
     name.Size = 16;
     name.Color = self.textColor;
     name.Center = true;
-    name.Outline = true;
+    name.Outline = false;
 
     if rootVis then
         espBox.Size = newVector2(2350 / rootPos.Z, headPos.Y - legPos.Y);
