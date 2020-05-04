@@ -21,7 +21,7 @@ function OwlESP.new(data)
         name = nil,
         tracer = nil,
         espColor = data.espColor or fromRGB(255, 255, 255),
-        textColor = data.textColor or fromRGB(255, 255, 255)
+        textColor = data.textColor or fromRGB(255, 255, 255),
         teamCheck = data.teamCheck or false;
     }, {__index = OwlESP});
 
@@ -55,7 +55,7 @@ function OwlESP.new(data)
     name.Size = 16;
     name.Color = self.textColor;
     name.Center = true;
-    name.Outline = false;
+    name.Outline = true;
 
     if rootVis then
         espBox.Size = newVector2(2350 / rootPos.Z, headPos.Y - legPos.Y);
